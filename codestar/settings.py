@@ -15,6 +15,7 @@ import os
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7o3%+tv3-mlu_^7+$_+2n_!j1t-qz=m5oz=kl-otp4-88xojgm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-sianwroejones-blog-3gw837u9mvv.ws.codeinstitute-ide.net']
 
@@ -85,7 +86,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 #}
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get(postgres://uccse13ervd:xbj6XdWnLTFd@ep-gentle-mountain-a23bxz6h.eu-central-1.aws.neon.tech/blush_scoff_eaten_276264))
 }
 
 # Password validation

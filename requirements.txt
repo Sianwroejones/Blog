@@ -3,5 +3,3 @@ Django==5.0.6
 gunicorn==22.0.0
 sqlparse==0.5.0
 
-pip3 install dj-database-url~=0.5 psycopg2~=2.9
-pip3 freeze --local > requirements.txt
